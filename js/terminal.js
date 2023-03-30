@@ -7,6 +7,7 @@ var contact = "<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href='mailto:derin
                 "&nbsp;&nbsp;&nbsp;&nbsp;<a href='https://github.com/derins'><i class='fa fa-github' style='font-size:30px;color:white;'></i></a>" +
                 "&nbsp;&nbsp;&nbsp;&nbsp;<a href='https://www.linkedin.com/in/derin-serbetcioglu-4a1a62104/'><i class='fa fa-linkedin' style='font-size:30px;color:white;'></i></a><br>";
 var resume = "<div class='container'><embed src='./files/derin_resume.pdf' type='application/pdf' height='600px' width='100%'/></div>"
+var askHelp = "<p id='command-text'> you are clearly clueless, just ask for help </p>"
 
 $('#outside').click(function() {
      $('#terminal-input' + x).focus();
@@ -18,27 +19,31 @@ function runTerminal(event) {
         command = document.getElementById('terminal-input' + x).value;
         command = command.replace(/^\s+/g, '');
         command = command.replace(/^\s+|\s+$/g, '');
+        command = command.toLowerCase()
 
         if (command === "clear") {
             document.location.reload();
         }
-        if (command === "sinan") {
+        else if (command === "sinan") {
             $('#terminal').append(sinan);
         }
-        if (command === "help") {
+        else if (command === "help") {
             help();
         }
-        if (command === "fuck") {
+        else if (command === "fuck") {
             $('#terminal').append(fuck);
         }
-        if (command === "war") {
+        else if (command === "war") {
             war();
         }
-        if (command === "resume") {
+        else if (command === "resume") {
             $('#terminal').append(resume);
         }
-        if(command === "contact") {
+        else if(command === "contact") {
             $('#terminal').append(contact);
+        }
+        else {
+            $('#terminal').append(askHelp);
         }
 
         x += 1;
