@@ -43,7 +43,7 @@ function stopRain(){
 }
 
 function scrollToName(){
-	$('#pg-one').append("<div id='front-page'><br><code>It's time to hack your way in.</code><br><code>Don't forget to ask for 'help' if you get stuck.</code><br><code id='derin'>-D-E-R-I-N</code><br><br><form action='./terminal.html'><br><br><button id='hack'> Click if the instructions are clear </button></form></div>");
+	$('#pg-one').append("<div id='front-page'><br><code>It's time to hack your way in.</code><br><code>Don't forget to ask for 'help' if you get stuck.</code><br><code id='derin'>D-E-R-I-N</code><br><br><form action='./terminal.html'><br><br><button id='hack'> Click if the instructions are clear </button></form></div>");
     $('html, body').animate({
         scrollTop: $("#front-page").offset().top
     }, 2000);
