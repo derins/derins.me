@@ -6,7 +6,7 @@ var sinan = "<a id='command-text' href='https://www.youtube.com/watch?v=k3b44qfx
 var contact = "<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href='mailto:derins@stanford.edu'><i class='fa fa-envelope' style='font-size:25px;color:white;'></i></a>" +
                 "&nbsp;&nbsp;&nbsp;&nbsp;<a href='https://github.com/derins'><i class='fa fa-github' style='font-size:30px;color:white;'></i></a>" +
                 "&nbsp;&nbsp;&nbsp;&nbsp;<a href='https://www.linkedin.com/in/derin-serbetcioglu-4a1a62104/'><i class='fa fa-linkedin' style='font-size:30px;color:white;'></i></a><br>";
-var resume = "<div><embed class='container' src='./derin_resume.pdf' type='application/pdf' height='600px' width='100%'/></div>"
+var resume = "<div><embed class='container' src='./derin_serbet_resume.pdf' type='application/pdf' height='600px' width='100%'/></div>"
 var askHelp = "<p id='command-text'> you are clearly clueless, just ask for help </p>"
 
 $('#outside').click(function() {
